@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>V Anand Ram - Profile</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <style>
+      #profile-img {
+      max-width: 100%;
+      height: auto;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 767px) {
+      h1 {
+        font-size: 28px;
+      }
+    }
+    .image-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .image-container img {
+      max-width: 100%;
+      transition: all 0.5s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-3">
+        <img class="img-fluid" id="profile-img" src="profile.png" alt="V Anand Ram">
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-secondary" onclick="enlargeImg()">Enlarge</button>
+            <button type="button" class="btn btn-secondary" onclick="shrinkImg()">Shrink</button>
+          </div>
+        </div>
+        <h1>V Anand Ram</h1>
+        <p>Student, Data Analyst</p>
+        <p>vanandram2002@gmail.com | +91 8078281686 | <a href="#">Linkedin</a> | <a href="#">HackerRank</a></p>
+      </div>
+
+    <hr>
+
+    <h2>Profile</h2>
+    <p>Computer science engineering student with specialization in artificial intelligence. A fast learner with good time management skills and adaptability. Passionate software developer adept in the fields of data analytics and machine learning.</p>
+
+    <h2>Education</h2>
+    <ul>
+      <li>Bachelor of Technology in Computer Science (Artificial Intelligence), Amrita University, Kollam (2020 - present)</li>
+      <li>Higher Secondary, Bhavans Varuna Vidyalaya, Kochi (2020)</li>
+      <li>High School, Vidyodaya School, Kochi (2018)</li>
+    </ul>
+
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Machine Learning</li>
+      <li>Programming: C++, Python, MATLAB</li>
+      <li>Big Data Analytics (NoSQL)</li>
+      <li>Natural Language Processing</li>
+    </ul>
+
+    <h2>Courses</h2>
+    <ul>
+      <li>Diploma in Data Science and Programming, IIT Madras (2022 - present)</li>
+      <li>Foundational Course in Data Science and Programming, IIT Madras (2021 - 2022)</li>
+      <li>Web Development Internship, Torc Infotech (2022)</li>
+    </ul>
+
+    <h2>Organizations</h2>
+    <ul>
+      <li>ACM Student Chapter, Amrita Vishwa Vidyapeetam, Member of Competitive Programming section (2022 - present)</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+      <li>Speech recognition system in Indian languages, Converting human speech to readable text using deep learning algorithms (present)</li>
+      <li>Prediction System, Customer Churn rate prediction using PySpark and Cloud architecture (2022)</li>
+      <li>Robotic Car, Remotely Controlled Robotic car using Raspberry Pi and Robotic Operating Systems (2022)</li>
+      <li>Image Processing, Image Noise reduction using Fourier Transform implemented in MATLAB (2021)</li>
+    </ul>
+    
+    <h2>Languages</h2>
+    <p>Proficiency to read, write, speak and understand:</p>
+    <ul>
+      <li>English, Malayalam and Hindi.</li>
+    </ul>
+    <p>Proficiency to speak and understand:</p>
+    <ul>
+      <li>Tamil</li>
+    </ul>
+    
+    <h2>Social Projects</h2>
+    <ul>
+      <li>Drug awareness program, GHSS Kulasekharapuram, Kollam (2022)</li>
+      <li>Coastal clean-up drive, Azheekal, Kollam (2022)</li>
+    </ul>
+</div>
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function enlargeImg() {
+      var img = document.getElementById("profile-img");
+      var currWidth = img.clientWidth;
+      if (currWidth < 1000) {
+        img.style.width = (currWidth + 100) + "px";
+      }
+    }
+    
+    function shrinkImg() {
+      var img = document.getElementById("profile-img");
+      var currWidth = img.clientWidth;
+      if (currWidth > 100) {
+        img.style.width = (currWidth - 100) + "px";
+      }
+    }
+  </script>
+</body>
+</html>
